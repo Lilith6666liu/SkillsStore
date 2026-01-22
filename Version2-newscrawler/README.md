@@ -399,13 +399,9 @@ def search_demo():
 
 欢迎提交Issue和Pull Request！
 
-## 📄 许可证
-
-MIT License
 
 ## 👨‍💻 作者
-
-Matrix Agent
+Lilith
 
 ---
 
