@@ -1,0 +1,98 @@
+2026-01-22 09:13:13,379 - __main__ - INFO - ============================================================
+2026-01-22 09:13:13,379 - __main__ - INFO - AI资讯抓取系统启动
+2026-01-22 09:13:13,379 - __main__ - INFO - 启动时间: 2026-01-22 09:13:13
+2026-01-22 09:13:13,379 - __main__ - INFO - ============================================================
+2026-01-22 09:13:13,379 - __main__ - INFO - 指定数据源: openai, huggingface
+2026-01-22 09:13:13,379 - __main__ - INFO - 开始抓取文章...
+2026-01-22 09:13:13,379 - src.crawler - INFO - 开始抓取: OpenAI Blog (https://openai.com/blog/rss.xml)
+2026-01-22 09:13:13,657 - src.crawler - WARNING - RSS解析警告: OpenAI Blog - <urlopen error [Errno 54] Connection reset by peer>
+2026-01-22 09:13:13,658 - src.crawler - INFO - 成功抓取 0 篇文章: OpenAI Blog
+2026-01-22 09:13:14,663 - src.crawler - INFO - 开始抓取: Hugging Face Blog (https://huggingface.co/blog/feed.xml)
+2026-01-22 09:13:16,770 - src.crawler - INFO - 成功抓取 8 篇文章: Hugging Face Blog
+2026-01-22 09:13:17,775 - src.crawler - INFO - 总共抓取 8 篇文章
+2026-01-22 09:13:17,776 - __main__ - INFO - 开始内容分类和标签提取...
+2026-01-22 09:13:17,776 - src.classifier - INFO - 完成 8 篇文章的分类和标签提取
+2026-01-22 09:13:17,776 - src.crawler - INFO - 关键词过滤: 保留 5/8 篇文章
+2026-01-22 09:13:17,777 - __main__ - INFO - 保存数据...
+2026-01-22 09:13:17,778 - src.storage - INFO - 保存 5 篇新文章到 ./data/ai_news.json
+2026-01-22 09:13:17,778 - __main__ - INFO - ============================================================
+2026-01-22 09:13:17,778 - __main__ - INFO - 抓取完成！共处理 5 篇文章
+2026-01-22 09:13:17,778 - __main__ - INFO - 存储类型: json
+2026-01-22 09:13:17,778 - __main__ - INFO - 
+数据源统计:
+2026-01-22 09:13:17,778 - __main__ - INFO -   Hugging Face Blog: 5 篇
+2026-01-22 09:13:17,778 - __main__ - INFO - 
+分类统计:
+2026-01-22 09:13:17,778 - __main__ - INFO -   research: 5 篇
+2026-01-22 09:13:17,778 - __main__ - INFO - ============================================================
+2026-01-22 09:13:54,838 - __main__ - INFO - ============================================================
+2026-01-22 09:13:54,839 - __main__ - INFO - AI资讯抓取系统启动
+2026-01-22 09:13:54,839 - __main__ - INFO - 启动时间: 2026-01-22 09:13:54
+2026-01-22 09:13:54,839 - __main__ - INFO - ============================================================
+2026-01-22 09:13:54,839 - __main__ - INFO - 使用所有数据源: 16 个
+2026-01-22 09:13:54,839 - __main__ - INFO - 开始抓取文章...
+2026-01-22 09:13:54,839 - src.crawler - INFO - 开始抓取: OpenAI Blog (https://openai.com/blog/rss.xml)
+2026-01-22 09:13:54,940 - src.crawler - WARNING - RSS解析警告: OpenAI Blog - <urlopen error [Errno 54] Connection reset by peer>
+2026-01-22 09:13:54,940 - src.crawler - INFO - 成功抓取 0 篇文章: OpenAI Blog
+2026-01-22 09:13:55,945 - src.crawler - INFO - 开始抓取: Google AI Blog (https://ai.googleblog.com/feeds/posts/default)
+2026-01-22 09:13:57,024 - src.crawler - WARNING - RSS解析警告: Google AI Blog - <unknown>:4:31: mismatched tag
+2026-01-22 09:13:57,024 - src.crawler - INFO - 成功抓取 0 篇文章: Google AI Blog
+2026-01-22 09:13:58,025 - src.crawler - INFO - 开始抓取: Hugging Face Blog (https://huggingface.co/blog/feed.xml)
+2026-01-22 09:14:00,043 - src.crawler - INFO - 成功抓取 3 篇文章: Hugging Face Blog
+2026-01-22 09:14:01,048 - src.crawler - INFO - 开始抓取: TechCrunch AI (https://techcrunch.com/category/artificial-intelligence/feed/)
+2026-01-22 09:14:01,493 - src.crawler - INFO - 成功抓取 20 篇文章: TechCrunch AI
+2026-01-22 09:14:02,499 - src.crawler - INFO - 开始抓取: VentureBeat AI (https://venturebeat.com/category/ai/feed/)
+2026-01-22 09:14:02,860 - src.crawler - WARNING - RSS解析警告: VentureBeat AI - <unknown>:2:0: syntax error
+2026-01-22 09:14:02,860 - src.crawler - INFO - 成功抓取 0 篇文章: VentureBeat AI
+2026-01-22 09:14:03,867 - src.crawler - INFO - 开始抓取: MIT Technology Review AI (https://www.technologyreview.com/topic/artificial-intelligence/feed)
+2026-01-22 09:14:04,350 - src.crawler - INFO - 成功抓取 5 篇文章: MIT Technology Review AI
+2026-01-22 09:14:05,352 - src.crawler - INFO - 开始抓取: arXiv AI (https://arxiv.org/rss/cs.AI)
+2026-01-22 09:14:07,922 - src.crawler - INFO - 成功抓取 20 篇文章: arXiv AI
+2026-01-22 09:14:08,928 - src.crawler - INFO - 开始抓取: arXiv Machine Learning (https://arxiv.org/rss/cs.LG)
+2026-01-22 09:14:10,824 - src.crawler - INFO - 成功抓取 20 篇文章: arXiv Machine Learning
+2026-01-22 09:14:11,830 - src.crawler - INFO - 开始抓取: arXiv Computation and Language (https://arxiv.org/rss/cs.CL)
+2026-01-22 09:14:13,211 - src.crawler - INFO - 成功抓取 20 篇文章: arXiv Computation and Language
+2026-01-22 09:14:14,214 - src.crawler - INFO - 开始抓取: AWS Machine Learning Blog (https://aws.amazon.com/blogs/machine-learning/feed/)
+2026-01-22 09:14:19,518 - src.crawler - INFO - 成功抓取 13 篇文章: AWS Machine Learning Blog
+2026-01-22 09:14:20,523 - src.crawler - INFO - 开始抓取: DeepMind Blog (https://deepmind.google/blog/rss.xml)
+2026-01-22 09:14:21,668 - src.crawler - INFO - 成功抓取 0 篇文章: DeepMind Blog
+2026-01-22 09:14:22,669 - src.crawler - INFO - 开始抓取: 机器之心 (https://www.jiqizhixin.com/rss)
+2026-01-22 09:14:24,192 - src.crawler - WARNING - RSS解析警告: 机器之心 - application/rss+xml,application/xml; charset=utf-8 is not an XML media type
+2026-01-22 09:14:24,192 - src.crawler - INFO - 成功抓取 12 篇文章: 机器之心
+2026-01-22 09:14:25,196 - src.crawler - INFO - 开始抓取: 量子位 (https://www.qbitai.com/feed)
+2026-01-22 09:14:25,419 - src.crawler - INFO - 成功抓取 10 篇文章: 量子位
+2026-01-22 09:14:26,424 - src.crawler - INFO - 开始抓取: 雷锋网AI (https://www.leiphone.com/category/ai/feed)
+2026-01-22 09:14:27,154 - src.crawler - WARNING - RSS解析警告: 雷锋网AI - <unknown>:47:2: mismatched tag
+2026-01-22 09:14:27,154 - src.crawler - INFO - 成功抓取 0 篇文章: 雷锋网AI
+2026-01-22 09:14:28,159 - src.crawler - INFO - 开始抓取: 36氪AI (https://36kr.com/feed/ai)
+2026-01-22 09:14:28,312 - src.crawler - WARNING - RSS解析警告: 36氪AI - <unknown>:2:0: syntax error
+2026-01-22 09:14:28,312 - src.crawler - INFO - 成功抓取 0 篇文章: 36氪AI
+2026-01-22 09:14:29,317 - src.crawler - INFO - 开始抓取: AI科技评论 (https://www.leiphone.com/category/academic/feed)
+2026-01-22 09:14:29,824 - src.crawler - WARNING - RSS解析警告: AI科技评论 - <unknown>:47:2: mismatched tag
+2026-01-22 09:14:29,824 - src.crawler - INFO - 成功抓取 0 篇文章: AI科技评论
+2026-01-22 09:14:30,828 - src.crawler - INFO - 总共抓取 123 篇文章
+2026-01-22 09:14:30,837 - __main__ - INFO - 开始内容分类和标签提取...
+2026-01-22 09:14:30,841 - src.classifier - INFO - 完成 123 篇文章的分类和标签提取
+2026-01-22 09:14:30,841 - src.crawler - INFO - 关键词过滤: 保留 103/123 篇文章
+2026-01-22 09:14:30,842 - __main__ - INFO - 保存数据...
+2026-01-22 09:14:30,848 - src.storage - INFO - 保存 101 篇新文章到 ./data/ai_news.json
+2026-01-22 09:14:30,849 - __main__ - INFO - ============================================================
+2026-01-22 09:14:30,849 - __main__ - INFO - 抓取完成！共处理 103 篇文章
+2026-01-22 09:14:30,849 - __main__ - INFO - 存储类型: json
+2026-01-22 09:14:30,849 - __main__ - INFO - 
+数据源统计:
+2026-01-22 09:14:30,849 - __main__ - INFO -   arXiv AI: 19 篇
+2026-01-22 09:14:30,849 - __main__ - INFO -   arXiv Machine Learning: 18 篇
+2026-01-22 09:14:30,850 - __main__ - INFO -   arXiv Computation and Language: 18 篇
+2026-01-22 09:14:30,850 - __main__ - INFO -   TechCrunch AI: 16 篇
+2026-01-22 09:14:30,850 - __main__ - INFO -   AWS Machine Learning Blog: 11 篇
+2026-01-22 09:14:30,850 - __main__ - INFO -   机器之心: 7 篇
+2026-01-22 09:14:30,850 - __main__ - INFO -   量子位: 7 篇
+2026-01-22 09:14:30,850 - __main__ - INFO -   MIT Technology Review AI: 5 篇
+2026-01-22 09:14:30,850 - __main__ - INFO -   Hugging Face Blog: 2 篇
+2026-01-22 09:14:30,850 - __main__ - INFO - 
+分类统计:
+2026-01-22 09:14:30,850 - __main__ - INFO -   research: 57 篇
+2026-01-22 09:14:30,850 - __main__ - INFO -   news: 35 篇
+2026-01-22 09:14:30,850 - __main__ - INFO -   tutorial: 11 篇
+2026-01-22 09:14:30,850 - __main__ - INFO - ============================================================
